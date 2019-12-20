@@ -27,7 +27,7 @@ class App extends Component {
         <main className='App__main'>
           {this.state.hasError && <p className='red'>There was an error! Oh no!</p>}
           <Switch>
-            <PublicOnlyRoute
+            <Route
               exact
               path={'/'}
               component={ThingListPage}
